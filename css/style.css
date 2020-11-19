@@ -64,7 +64,6 @@ a:active {
 }
 
 .text {
-    /* text-align: center; */
     position: relative;
     line-height: 250px;
     width: 50%;
@@ -234,7 +233,6 @@ ol {
     justify-content: center;
     flex-grow: 1;
     align-items: center;
-    /* justify-content: space-around; */
 }
 
 .social p {
@@ -375,7 +373,6 @@ ol {
         width: 100%;
         margin-top: 50px;
         text-align: center;
-        /* padding-left: 70px; */
     }
     #about>div {
         border: 1px solid rgb(75, 104, 75);
@@ -407,6 +404,109 @@ ol {
         height: 450px;
         width: 450px;
         margin-left: 50px;
+    }
+    .social p {
+        position: relative;
+        margin: 30px;
+        text-align: center;
+    }
+    #telegram:before,
+    #linked:before,
+    #mobile:before {
+        left: -50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: auto;
+        height: 100%;
+        background: rgb(75, 104, 75);
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    .navigation li {
+        line-height: 30px;
+        margin-left: -40px;
+    }
+    .navigation li a {
+        font-size: 15px;
+    }
+    .section {
+        padding-left: 40px;
+        height: 100%;
+        overflow: hidden;
+    }
+    #home {
+        display: block;
+    }
+    .photo {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .photo img {
+        height: 200px;
+        border-radius: 100px;
+    }
+    .text {
+        width: 100%;
+    }
+    .text p,
+    .text span {
+        font-size: 15px;
+        padding: 0;
+    }
+    .namefunc {
+        top: -50px;
+    }
+    .funcres {
+        top: -20px;
+    }
+    .prof {
+        top: 20px;
+    }
+    #about {
+        display: block;
+        padding-top: 0;
+    }
+    #about>div {
+        border: 1px solid rgb(75, 104, 75);
+        height: 20%;
+        width: auto;
+        margin: 0;
+        margin: 20px;
+        margin-top: 0;
+    }
+    #education,
+    #aboutMe {
+        font-size: 15px;
+        text-align: center;
+    }
+    ol {
+        list-style-type: none;
+        margin-left: -30px;
+    }
+    #skills {
+        font-size: 9px;
+    }
+    .eng:after,
+    .ru:after,
+    .ua:after,
+    .de:after {
+        left: 55px;
+    }
+    .links {
+        display: block;
+    }
+    iframe {
+        height: 200px;
+        width: 200px;
+        margin-left: -20px;
     }
     .social p {
         position: relative;
